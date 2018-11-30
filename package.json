@@ -1,0 +1,23 @@
+{
+  "name": "kata-brainfuck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Betisman/kata-brainfuck.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Betisman/kata-brainfuck/issues"
+  },
+  "homepage": "https://github.com/Betisman/kata-brainfuck#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0"
+  }
+}
