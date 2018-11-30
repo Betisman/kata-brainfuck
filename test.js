@@ -52,4 +52,11 @@ describe('Unit tests', () => {
     expect(pointer).to.eql(0);
   });
 
+  it('>++++ increments 2', () => {
+    const program = '>++++';
+    const { value, pointer } = brainfuck(program, cells, 0);
+    expect(value).to.eql(4);
+    expect(pointer).to.eql(1);
+  });
+
 });
