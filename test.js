@@ -26,4 +26,25 @@ describe('Unit tests', () => {
     const { value, pointer } = brainfuck(program, cells, 1);
     expect(pointer).to.eql(0);
   });
+
+  it.skip('< fails if underflow', () => {
+    const program = '<';
+    expect(brainfuck(program, cells, 0)).to.throwException();
+  });
+
+  it('+ increments', () => {
+    const program = '+';
+    const { value, pointer } = brainfuck(program, cells, 0);
+    expect(value).to.eql(1);
+  });
+
+  it('- decrements', () => {
+    const program = '-';
+    cells[0] = 1;
+    const { value, pointer } = brainfuck(program, cells, 0);
+    expect(value).to.eql(0);
+  });
+
+  
+
 });
